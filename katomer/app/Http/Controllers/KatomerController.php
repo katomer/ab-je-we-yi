@@ -10,10 +10,11 @@ use App\Http\Controllers\Controller;
 
 class KatomerController extends Controller
 {
+    /**
+     * @return \Illuminate\View\View
+     */
     public function index()
     {
-        $a_user = User::find(1);
-        //return $a_user;
-        return view('katomer')->with('user',$a_user);
+        return view('welcome');
     }
 }
