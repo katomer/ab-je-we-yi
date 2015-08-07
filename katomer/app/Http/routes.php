@@ -15,7 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/car', function () {
+    return view('car');
+});
+
+Route::get('/home', function () {
+    return view('home');
+});
+
 Route::controllers([
-    'auth' => 'Auth\AuthController',
-    'password' => 'Auth\PasswordController',
+    'auth'=>'Auth\AuthController',
+    'password'=>'Auth\PasswordController',
 ]);

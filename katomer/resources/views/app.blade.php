@@ -29,11 +29,11 @@
 <div class="container">
 
     <div class="masthead">
-        <h3 class="text-muted">Katomer</h3>
+        <a href="/"><h3 class="text-muted">Katomer</h3></a>
         <nav>
             <ul class="nav nav-justified">
-                <li class="active"><a href="#">Car</a></li>
-                <li><a href="#">Home</a></li>
+                <li class="active"><a href="/car">Car</a></li>
+                <li><a href="/home">Home</a></li>
                 <li><a href="#">Computer</a></li>
                 <li><a href="#">Phone</a></li>
                 <li><a href="#">Electronics</a></li>
@@ -52,27 +52,41 @@
 
     <!-- We can do such row of columns -->
     <div class="row">
-        <div class="col-lg-4">
-            <h2>Ad Place1</h2>
+        <div class="col-lg-3">
+            <h2>Ad Column1</h2>
             <p class="text-danger">We will use this as an ad colomn or as a moderator control panel</p>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p class="text-justify">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
             <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
         </div>
-        <div class="col-lg-4">
-            <h2>Main Column</h2>
-            <p>We will use this as the center column </p>
-            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+        <div class="col-lg-6">
+            @yield('content')
         </div>
-        <div class="col-lg-4">
-            <h2>Ad column</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+        <div class="col-lg-3">
+            <h2>Ad Column2</h2>
+            <p class="text-danger">We will use this as an ad colomn</p>
+            <p class="text-justify">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
             <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
         </div>
     </div>
 
     <!-- Site footer -->
     <footer class="footer">
-        <p>&copy; katomer.com 2015</p>
+        <div class="row">
+            <div class="col-lg-3">
+                <h4>Contact us</h4>
+                <p>E-mail: admin@katomer.com</p>
+                <p>Twitter:</p>
+                <p>Facebook:</p>
+            </div>
+            <div class="col-lg-6">
+                <p class="col-centered">&copy; katomer.com 2015</p>
+            </div>
+            <div class="col-lg-3">
+                <h4>Help</h4>
+                <p class="text-danger">Amharic</p>
+                <p class="text-danger">English</p>
+            </div>
+        </div>
     </footer>
 
 </div> <!-- /container -->
