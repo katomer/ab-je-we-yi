@@ -28,8 +28,6 @@
 
 <div class="container">
 
-    <!-- The justified navigation menu is meant for single line per list item.
-         Multiple lines will require custom code not provided by Bootstrap. -->
     <div class="masthead">
         <h3 class="text-muted">Katomer</h3>
         <nav>
@@ -52,7 +50,7 @@
         <p><a class="btn btn-lg btn-success" href="#" role="button">Upload</a></p>
     </div>
 
-    <!-- Example row of columns -->
+    <!-- We can do such row of columns -->
     <div class="row">
         <div class="col-lg-4">
             <h2>Ad Place1</h2>
