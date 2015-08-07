@@ -11,19 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',            'ItemsController\ViewController@all');
+Route::get('/car',         'ItemsController\ViewController@car');
+Route::get('/computer',    'ItemsController\ViewController@computer');
+Route::get('/electronics', 'ItemsController\ViewController@electronics');
+Route::get('/house',       'ItemsController\ViewController@house');
+Route::get('/household',   'ItemsController\ViewController@household');
+Route::get('/phone',       'ItemsController\ViewController@phone');
+Route::get('/other',       'ItemsController\ViewController@other');
 
-Route::get('/car', function () {
-    return view('car');
-});
-
-Route::get('/home', function () {
-    return view('home');
-});
-
-Route::controllers([
-    'auth'=>'Auth\AuthController',
-    'password'=>'Auth\PasswordController',
-]);

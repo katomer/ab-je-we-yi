@@ -29,16 +29,16 @@
 <div class="container">
 
     <div class="masthead">
-        <a href="/"><h3 class="text-muted">Katomer</h3></a>
+        <a href="/" style="text-decoration:none;"><h3 class="text-muted">Katomer</h3></a>
         <nav>
             <ul class="nav nav-justified">
                 <li class="active"><a href="/car">Car</a></li>
-                <li><a href="/home">Home</a></li>
-                <li><a href="#">Computer</a></li>
-                <li><a href="#">Phone</a></li>
-                <li><a href="#">Electronics</a></li>
-                <li><a href="#">Household</a></li>
-                <li><a href="#">Other</a></li>
+                <li><a href="/computer">Computer</a></li>
+                <li><a href="/electronics">Electronics</a></li>
+                <li><a href="/house"">House</a></li>
+                <li><a href="/household">Household</a></li>
+                <li><a href="/phone">Phone</a></li>
+                <li><a href="/other">Other</a></li>
             </ul>
         </nav>
     </div>
@@ -52,16 +52,16 @@
 
     <!-- We can do such row of columns -->
     <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-2">
             <h2>Ad Column1</h2>
             <p class="text-danger">We will use this as an ad colomn or as a moderator control panel</p>
             <p class="text-justify">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
             <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-8" style="text-align:center">
             @yield('content')
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-2">
             <h2>Ad Column2</h2>
             <p class="text-danger">We will use this as an ad colomn</p>
             <p class="text-justify">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
@@ -96,3 +96,5 @@
 <script src="../../public/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
+
+
